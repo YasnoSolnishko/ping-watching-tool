@@ -1,2 +1,3 @@
-# ping-watching-tool
-Small tool to measure the ping to the desired address
+# Ping monitoring tool
+
+Small tool to monitor and draw a diagram of the ping to the desired address

@@ -29,6 +29,9 @@ def animate(i):
     #print(f'index {latest_index}, window_size {window_size}, {latest_index > window_size}, x_len {len(x_vals)}, y_len {len(y_vals)}')
     plt.cla()
     plt.plot(x_vals, y_vals)
+    plt.annotate(f'Host name: {hostname}', xy=(0, 1), xycoords='axes fraction', fontsize=12,
+                xytext=(0, 0), textcoords='offset points',
+                ha='left', va='top')
     plt.annotate(f'Current RTT: {p.rtt_avg_ms} ms', xy=(0, 1), xycoords='axes fraction', fontsize=12,
                 xytext=(0, -20), textcoords='offset points',
                 ha='left', va='top')
